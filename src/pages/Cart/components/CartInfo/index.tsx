@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import product3 from '../../../../images/product-3.jpg';
 import product4 from '../../../../images/product-4.jpg';
 
@@ -97,10 +98,10 @@ const CartInfo = (props: Props) => {
 											<td className='quantity'>
 												<div className='input-group mb-3'>
 													<input
-														type='text'
+														type='number'
 														name='quantity'
 														className='quantity form-control input-number'
-														value='1'
+														defaultValue='1'
 														min='1'
 														max='100'
 													/>
@@ -204,12 +205,12 @@ const CartInfo = (props: Props) => {
 								</p>
 							</div>
 							<p>
-								<a
-									href='checkout.html'
+								<Link
+									to='/checkout'
 									className='btn btn-primary py-3 px-4'
 								>
 									Proceed to Checkout
-								</a>
+								</Link>
 							</p>
 						</div>
 					</div>

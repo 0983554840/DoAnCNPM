@@ -1,4 +1,7 @@
 import React from 'react';
+import { IoMdRemoveCircle } from 'react-icons/io';
+import product3 from '../../../../images/product-3.jpg';
+import product4 from '../../../../images/product-4.jpg';
 
 interface Props {}
 
@@ -16,63 +19,7 @@ const CheckoutInfo = (props: Props) => {
 								<div className='row align-items-end'>
 									<div className='col-md-6'>
 										<div className='form-group'>
-											<label>Firt Name</label>
-											<input
-												type='text'
-												className='form-control'
-												placeholder=''
-											/>
-										</div>
-									</div>
-									<div className='col-md-6'>
-										<div className='form-group'>
-											<label>Last Name</label>
-											<input
-												type='text'
-												className='form-control'
-												placeholder=''
-											/>
-										</div>
-									</div>
-									<div className='w-100'></div>
-									<div className='col-md-12'>
-										<div className='form-group'>
-											<label>State / Country</label>
-											<div className='select-wrap'>
-												<div className='icon'>
-													<span className='ion-ios-arrow-down'></span>
-												</div>
-												<select
-													name=''
-													id=''
-													className='form-control'
-												>
-													<option value=''>
-														France
-													</option>
-													<option value=''>
-														Italy
-													</option>
-													<option value=''>
-														Philippines
-													</option>
-													<option value=''>
-														South Korea
-													</option>
-													<option value=''>
-														Hongkong
-													</option>
-													<option value=''>
-														Japan
-													</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<div className='w-100'></div>
-									<div className='col-md-6'>
-										<div className='form-group'>
-											<label>Street Address</label>
+											<label>Delivery Address</label>
 											<input
 												type='text'
 												className='form-control'
@@ -80,75 +27,142 @@ const CheckoutInfo = (props: Props) => {
 											/>
 										</div>
 									</div>
-									<div className='col-md-6'>
-										<div className='form-group'>
-											<input
-												type='text'
-												className='form-control'
-												placeholder='Appartment, suite, unit etc: (optional)'
-											/>
-										</div>
-									</div>
-									<div className='w-100'></div>
-									<div className='col-md-6'>
-										<div className='form-group'>
-											<label>Town / City</label>
-											<input
-												type='text'
-												className='form-control'
-												placeholder=''
-											/>
-										</div>
-									</div>
-									<div className='col-md-6'>
-										<div className='form-group'>
-											<label>Postcode / ZIP *</label>
-											<input
-												type='text'
-												className='form-control'
-												placeholder=''
-											/>
-										</div>
-									</div>
-									<div className='w-100'></div>
-									<div className='col-md-6'>
-										<div className='form-group'>
-											<label>Phone</label>
-											<input
-												type='text'
-												className='form-control'
-												placeholder=''
-											/>
-										</div>
-									</div>
-									<div className='col-md-6'>
-										<div className='form-group'>
-											<label>Email Address</label>
-											<input
-												type='text'
-												className='form-control'
-												placeholder=''
-											/>
-										</div>
-									</div>
-									<div className='w-100'></div>
-									<div className='col-md-12'>
-										<div className='form-group mt-4'>
-											<div className='radio'>
-												<label className='mr-3'>
-													<input
-														type='radio'
-														name='optradio'
-													/>{' '}
-													Create an Account?{' '}
-												</label>
-												<label>
-													<input
-														type='radio'
-														name='optradio'
-													/>{' '}
-													Ship to different address
-												</label>
+								</div>
+
+								<label>List items</label>
+								<div className='cart-detail cart-total p-3 p-md-4'>
+									<div className='row'>
+										<div className='col-md-12 ftco-animate'>
+											<div className='cart-list'>
+												<table className='table'>
+													<thead className='thead-primary'>
+														<tr className='text-center'>
+															<th>&nbsp;</th>
+															<th>&nbsp;</th>
+															<th>
+																Product name
+															</th>
+															<th>Price</th>
+															<th>Quantity</th>
+															<th>Total</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr className='text-center'>
+															<td className='product-remove'>
+																<span
+																	style={{
+																		fontSize:
+																			'larger',
+																	}}
+																>
+																	x
+																</span>
+															</td>
+
+															<td className='image-prod'>
+																<div
+																	className='img'
+																	style={{
+																		backgroundImage: `url(${product3})`,
+																	}}
+																></div>
+															</td>
+
+															<td className='product-name'>
+																<h3>
+																	Bell Pepper
+																</h3>
+																<p>
+																	Far far
+																	away, behind
+																	the word
+																	mountains,
+																	far from the
+																	countries
+																</p>
+															</td>
+
+															<td className='price'>
+																$4.90
+															</td>
+
+															<td className='quantity'>
+																<div className='input-group mb-3'>
+																	<input
+																		type='number'
+																		name='quantity'
+																		className='quantity form-control input-number'
+																		defaultValue='1'
+																		min='1'
+																		max='100'
+																	/>
+																</div>
+															</td>
+
+															<td className='total'>
+																$4.90
+															</td>
+														</tr>
+
+														<tr className='text-center'>
+															<td className='product-remove'>
+																<span
+																	style={{
+																		fontSize:
+																			'larger',
+																	}}
+																>
+																	x
+																</span>
+															</td>
+
+															<td className='image-prod'>
+																<div
+																	className='img'
+																	style={{
+																		backgroundImage: `url(${product4})`,
+																	}}
+																></div>
+															</td>
+
+															<td className='product-name'>
+																<h3>
+																	Bell Pepper
+																</h3>
+																<p>
+																	Far far
+																	away, behind
+																	the word
+																	mountains,
+																	far from the
+																	countries
+																</p>
+															</td>
+
+															<td className='price'>
+																$15.70
+															</td>
+
+															<td className='quantity'>
+																<div className='input-group mb-3'>
+																	<input
+																		type='number'
+																		name='quantity'
+																		className='quantity form-control input-number'
+																		defaultValue='1'
+																		min='1'
+																		max='100'
+																	/>
+																</div>
+															</td>
+
+															<td className='total'>
+																$15.70
+															</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 										</div>
 									</div>
@@ -170,10 +184,7 @@ const CheckoutInfo = (props: Props) => {
 											<span>Delivery</span>
 											<span>$0.00</span>
 										</p>
-										<p className='d-flex'>
-											<span>Discount</span>
-											<span>$3.00</span>
-										</p>
+
 										<hr />
 										<p className='d-flex total-price'>
 											<span>Total</span>
@@ -195,7 +206,7 @@ const CheckoutInfo = (props: Props) => {
 															name='optradio'
 															className='mr-2'
 														/>{' '}
-														Direct Bank Tranfer
+														COD
 													</label>
 												</div>
 											</div>
@@ -209,7 +220,7 @@ const CheckoutInfo = (props: Props) => {
 															name='optradio'
 															className='mr-2'
 														/>{' '}
-														Check Payment
+														VN Pay
 													</label>
 												</div>
 											</div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoLogoFacebook, IoLogoTwitter } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 interface SignInProps {}
@@ -50,7 +51,7 @@ export const SignUp = (props: SignInProps) => {
 					<p></p>
 					<p>
 						Already have account?{' '}
-						<a href='http://localhost:3000/signin'>Signin here</a>
+						<Link to='/signin'>Signin here</Link>
 					</p>
 					<p>
 						Signin with{' '}

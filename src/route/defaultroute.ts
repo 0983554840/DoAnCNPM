@@ -9,4 +9,5 @@ export const defaultRoute = {
 	singleproduct: '/singleproduct',
 	checkout: '/checkout',
 	wishlist: '/wishlist',
+	order: '/order',
 };

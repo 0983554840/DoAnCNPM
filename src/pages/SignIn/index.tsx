@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoLogoFacebook, IoLogoTwitter } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 interface SignInProps {}
@@ -40,11 +41,11 @@ export const SignIn = (props: SignInProps) => {
 						type='button'
 						value='Login'
 					></input>
-					<a href='http://localhost:3000/forgotpass'>Forgot Pass?</a>
+					<Link to='/forgotpass'>Forgot Pass?</Link>
 					<p></p>
 					<p>
 						Dont have account?{' '}
-						<a href='http://localhost:3000/signup'>Register here</a>
+						<Link to='/signup'>Register here</Link>
 					</p>
 					<p>
 						SignIn with{' '}

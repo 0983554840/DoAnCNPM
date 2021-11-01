@@ -27,7 +27,7 @@ const CardProduct = () => {
 				</div>
 				<div className='bottom-area d-flex px-4'>
 					<div className='m-auto d-flex'>
-						<a
+						{/* <a
 							href='#'
 							className='
 												add-to-cart
@@ -40,7 +40,7 @@ const CardProduct = () => {
 							<span>
 								<IoIosAnalytics />
 							</span>
-						</a>
+						</a> */}
 						<a
 							href='#'
 							className='

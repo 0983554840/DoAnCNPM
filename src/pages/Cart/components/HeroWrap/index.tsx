@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import bg1 from '../../../../images/bg_1.jpg';
 interface Props {}
 
@@ -13,7 +14,7 @@ const HeroWrap = (props: Props) => {
 					<div className='col-md-9 ftco-animate text-center'>
 						<p className='breadcrumbs'>
 							<span className='mr-2'>
-								<a href='index.html'>Home</a>
+								<Link to='/'>Home</Link>
 							</span>{' '}
 							<span>Cart</span>
 						</p>
