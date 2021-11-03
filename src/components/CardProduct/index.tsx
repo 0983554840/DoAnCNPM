@@ -1,5 +1,4 @@
 import React from 'react';
-
 import product7 from '../../images/product-7.jpg';
 import { IoIosAnalytics, IoIosCart } from 'react-icons/io';
 import { HiOutlineHeart } from 'react-icons/hi';

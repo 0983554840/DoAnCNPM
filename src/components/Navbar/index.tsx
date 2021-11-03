@@ -9,9 +9,9 @@ const Navbar = () => {
 				? 'nav-link dropdown-toggle active'
 				: 'nav-link dropdown-toggle';
 	};
-	// const blurDropdown04 = (e: any) => {
-	// 	e.target.className = 'nav-link dropdown-toggle';
-	// };
+	const blurDropdown04 = (e: any) => {
+		e.target.className = 'nav-link dropdown-toggle';
+	};
 	return (
 		<nav
 			className='

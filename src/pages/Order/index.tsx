@@ -14,7 +14,7 @@ const OrderPage = (props: OrderProps) => {
 	return (
 		<div className='orderPage container'>
 			<div className='orderPage-wrapper'>
-				<span onClick={onClickMyNhan} className='list active'>
+				<span onClick={onClickMyNhan} className='list'>
 					Wait to confirm
 				</span>
 				<span onClick={onClickMyNhan} className='list'>
@@ -28,6 +28,9 @@ const OrderPage = (props: OrderProps) => {
 				</span>
 				<span onClick={onClickMyNhan} className='list'>
 					Canceled
+				</span>
+				<span onClick={onClickMyNhan} className='list'>
+					Order Status
 				</span>
 			</div>
 			<div className='orderPage-bottom'>
