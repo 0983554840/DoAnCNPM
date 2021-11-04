@@ -9,6 +9,7 @@ import { Contact } from '../pages/Contact';
 import { ForgotPass } from '../pages/ForgotPass';
 import HomePage from '../pages/HomePage';
 import OrderPage from '../pages/Order';
+import { ProfilePage } from '../pages/Profile';
 import ShopPage from '../pages/Shop';
 import { SignIn } from '../pages/SignIn';
 import { SignUp } from '../pages/SignUp';
@@ -119,6 +120,15 @@ const routes: Array<IRoute> = [
 			</>
 		),
 		path: defaultRoute.order,
+		exact: true,
+	},
+	{
+		child: (
+			<>
+				<ProfilePage />
+			</>
+		),
+		path: defaultRoute.profile,
 		exact: true,
 	},
 ];

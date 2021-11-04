@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { getAllProductAsync } from '../../../../apis/product/getallproduct.api';
 import CardProduct from '../../../../components/CardProduct';
 
 interface Props {}
 
 const OurProduct = (props: Props) => {
-	const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+	const [list, setList] = useState<any>([]);
+
+	React.useEffect(() => {
+		const getData = async () => {
+			const result = await getAllProductAsync({ limit: 20, skip: 1 });
+			console.log(result);
+			const { data } = result;
+			setList(data);
+		};
+		getData();
+	}, []);
 	return (
 		<section className='ftco-section'>
 			<div className='container'>
@@ -28,9 +39,9 @@ const OurProduct = (props: Props) => {
 			</div>
 			<div className='container'>
 				<div className='row'>
-					{data.map((e, i) => (
+					{list.map((e: any, i: number) => (
 						<div className='col-md-6 col-lg-3 ftco-animate' key={i}>
-							<CardProduct />
+							<CardProduct data={e} />
 						</div>
 					))}
 				</div>

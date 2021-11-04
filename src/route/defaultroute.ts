@@ -10,4 +10,5 @@ export const defaultRoute = {
 	checkout: '/checkout',
 	wishlist: '/wishlist',
 	order: '/order',
+	profile: '/profile',
 };
